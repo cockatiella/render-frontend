@@ -27,7 +27,7 @@ function Edituser(){
     const routeParams=useParams();
     const id=routeParams.id;
     function getsingledata(){
-        axios.get(`http://localhost:4000/${id}`).then(res=>{
+        axios.get(`https://mernstack-app-backend.onrender.com/getsingleuser/${id}`).then(res=>{
             setnewdata({
                 Name:res.data.name,
                 Email:res.data.email,
